@@ -11,6 +11,9 @@ python = "^3.11"
 streamlit = "^1.42.0"
 streamlit-authenticator = "^0.4.1"
 authlib = "^1.4.1"
+st-annotated-text = "^4.0.2"
+pdfplumber = "^0.11.5"
+huggingface-hub = "^0.28.1"
 
 
 [build-system]
