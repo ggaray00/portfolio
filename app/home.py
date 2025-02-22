@@ -7,13 +7,13 @@ from huggingface_hub import InferenceClient
 import streamlit as st
 
 
-client = InferenceClient("dslim/distilbert-NER",
-                         token=st.secrets["all_token"])
-
-
-aa = client.token_classification("Hello, my name is John Doe and I live in New York City.")
-
-print(aa)
+# client = InferenceClient("dslim/distilbert-NER",
+#                          token=st.secrets["all_token"])
+#
+#
+# aa = client.token_classification("Hello, my name is John Doe and I live in New York City.")
+#
+# print(aa)
 
 # Check if user is logged in
 if "authenticated" not in st.session_state:
