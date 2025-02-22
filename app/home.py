@@ -1,9 +1,11 @@
 import streamlit as st
 
+
 PASSWORD = st.secrets["log_in_pwd"]  # Change this to your desired password
 
 from huggingface_hub import InferenceClient
 import streamlit as st
+
 
 client = InferenceClient("dslim/distilbert-NER",
                          token=st.secrets["all_token"])
@@ -15,7 +17,7 @@ print(aa)
 
 # Check if user is logged in
 if "authenticated" not in st.session_state:
-    st.session_state.authenticated = False
+    st.session_state.authenticated = True
 
 def login():
     if st.session_state["password"] == PASSWORD:
